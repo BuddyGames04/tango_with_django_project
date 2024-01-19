@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load staticfiles %} <!-- New line -->
+<html>
+
+<head>
+<title>Rango</title>
+</head>
+
+<body>
+<h1>This is a test</h1>
+<div>
+Yo yo yo <br />
+<strong>{{ boldmessage }}</strong><br />
+</div>
+<div>
+    <a href="/rango/index/">Index</a><br />
+    <img src="{% static 'images/UnityGudev.png' %}" alt="Picture of gudev's unity workshop post" /> <!-- New line -->
+    <img src="{{ MEDIA_URL }}cheef.jpg" alt="Picture of Master Chief."/>
+    </div>
+    
+</body>
+
+</html>
