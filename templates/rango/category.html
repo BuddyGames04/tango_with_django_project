@@ -8,6 +8,8 @@
     <a href="{% url 'rango:index' %}">Index</a> <!-- Link back to the index page -->
     {% if category %}
         <h1>{{ category.name }}</h1>
+        <!-- Add Page link -->
+        <a href="{% url 'rango:add_page' category.slug %}">Add Page</a> <br/>
         {% if pages %}
         <ul>
             {% for page in pages %}
