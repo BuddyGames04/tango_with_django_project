@@ -2,6 +2,7 @@ from django.contrib import admin
 from rango.models import Category, Page
 from django.contrib import admin
 from rango.models import Category, Page
+from rango.models import UserProfile
 
 
 # Define a custom admin class for the Page model
@@ -18,3 +19,5 @@ admin.site.register(Category, CategoryAdmin)
 
 # Register the Page model with the custom admin interface
 admin.site.register(Page, PageAdmin)
+
+admin.site.register(UserProfile)
